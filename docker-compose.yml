@@ -1,0 +1,23 @@
+version: "3"
+services:
+
+  menu:
+    build: ./menu
+
+  registry_service:
+    build: ./registry_service
+
+  ias:
+    build: ./ias
+
+  chat:
+    build: ./doors/chat
+
+  files:
+    build: ./files
+
+  messages:
+    build: ./messages
+
+  queue:
+    image: rabbitmq
